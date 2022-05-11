@@ -1,5 +1,19 @@
 h1{
-  color:blue;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: normal;
+  font-size: 6em;
+  text-align: center;
+  margin-bottom: 0;
+  margin-bottom: -0.25em;
+}
+
+h2{
+  font-family: "Archivo Black", sans-serif;
+  font-weight: normal;
+  font-size: 100%;
+  text-align: center;
+  margin-bottom: 0;
+  margin-bottom: -0.25em;
 }
 
 
@@ -23,5 +37,34 @@ h1{
 
 .topnav a.active{
   background-color: #04AA6D;
-  color: white; 
+  color: white;
+}
+
+.gradient-text{
+  background-image:linear-gradient(91deg,#ffdf00,#c22313);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text; /*Only renders background on text*/
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+
+}
+@-webkit-keyframes Border {
+    0% {border-color: black;}
+    100% {border-color: white;}
+}
+.half-circle {
+    overflow: auto;
+    margin: 0 auto;
+    width: 50%;  /*700px*/
+    height: 25vw; /* 350px as the half of the width */
+    background-color: transparent;
+    /* 100px of height + 10px of border */
+    /* 100px of height + 10px of border */
+    border-bottom-left-radius: 25vw; /*360*/
+    border-bottom-right-radius: 25vw; /*360*/
+    border: 10px solid #051427;
+    border-top: 0;
+    -webkit-animation:Border 3s infinite alternate;
 }
